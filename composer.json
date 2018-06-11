@@ -1,0 +1,20 @@
+{
+    "name": "reasno/sms-sender",
+    "description": "Send messages via sms!",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Reasno",
+            "email": "guxi99@gmail.com"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Reasno\\SmsSender\\SmsServiceProvider"
+            ]
+        }
+    }
+}
