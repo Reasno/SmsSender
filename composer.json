@@ -16,5 +16,10 @@
                 "Reasno\\SmsSender\\SmsServiceProvider"
             ]
         }
+    },    
+    "autoload": {
+        "psr-4": {
+            "Reasno\\ElkLogger\\": "src/"
+        }
     }
 }
