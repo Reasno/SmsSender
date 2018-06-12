@@ -22,7 +22,7 @@ class SmsServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(SmsSender::class, function($app){
+        $this->app->singleton(SmsSender::class, function ($app) {
             return new ZthySmsSender($app['config']['services.zthy']);
         });
     }
@@ -36,4 +36,3 @@ class SmsServiceProvider extends ServiceProvider
         return [SmsSender::class];
     }
 }
-

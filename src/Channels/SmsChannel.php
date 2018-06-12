@@ -33,6 +33,5 @@ class SmsChannel
         $this->sender->send($notifiable->phone, $message->content)
 
         // Send notification to the $notifiable instance...
-
     }
 }
