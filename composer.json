@@ -13,7 +13,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Reasno\\SmsSender\\SmsServiceProvider"
+                "Reasno\\SmsSender\\Providers\\SmsServiceProvider"
             ]
         }
     },    
