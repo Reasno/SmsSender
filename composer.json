@@ -19,7 +19,6 @@
     },    
     "autoload": {
         "psr-4": {
-            "Reasno\\ElkLogger\\": "src/",
             "Reasno\\SmsSender\\": "src/"
         }
     }
