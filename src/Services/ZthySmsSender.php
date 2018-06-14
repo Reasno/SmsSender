@@ -34,11 +34,9 @@ class ZthySmsSender implements SmsSender
         $result = file_get_contents($this->api.'?'.http_build_query($params), false, $context);
         if ($result === false) {
             return false;
-            //return array("code"=>500, "msg"=>"file_get_contents failed.");
         } else {
-            Log::debug('sms return value.', ['reason'=>$result]);
+            Log::debug('send sms failed.', ['reason'=>$result]);
             return true;
-            //return json_decode($result, true);
         }
     }
 }
