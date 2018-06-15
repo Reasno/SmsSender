@@ -28,6 +28,7 @@ class ZthySmsSender implements SmsSender
             'http' => array(
                 'method'  => 'POST',
                 'timeout' => $this->apiTimeout,
+                'header' => ['Host' => 'api.zthysms.com'], 
             ),
         );
         $context  = stream_context_create($options);
